@@ -1,0 +1,44 @@
+﻿body {
+    background-image: url(https://i.pinimg.com/474x/58/b5/c3/58b5c3be26f6cc6dec733c610939d950.jpg);
+    background-size:cover;
+    background-attachment:fixed;
+    
+}
+.box {
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%) scale(2,2);
+
+    background-size:cover;
+    background-color:beige;
+    border-radius:8%;
+    width:20%;
+    height:30%; 
+}
+.box *{
+    text-align:center;
+    border-radius:3px;  
+    display:block;
+    
+    }
+    .box input[type="text"], input[type="submit"], button {
+        background-color: darkgray;
+        border: 1px solid black;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        width:50%;
+    }
+    .box button, p{
+        color:rgba(0,0,0,0.4);
+    }
+    .box input[type="submit"]{
+        background-color:antiquewhite;
+    }
+    
+
+
+
+
+    

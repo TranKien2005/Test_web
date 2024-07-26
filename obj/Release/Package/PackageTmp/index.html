@@ -1,0 +1,37 @@
+﻿<html>
+<head>
+	<title>Bài tập</title>
+	<script>
+		function login(login_with) {
+			if (login_with == "facebook") {
+				window.open("https://www.facebook.com", "_blank")
+			}
+			else if(login_with== "google") {
+				window.open("https://www.google.com.vn/?hl=vi", "_blank")
+			}
+			else {
+				alert("Error")
+			}
+		}
+	</script>
+	<link rel="stylesheet" href="index.css" />
+</head>
+<body>
+	<div class="box">
+	<h1>Login</h1>
+	<p>You can login with</p>
+	<button onclick="login('facebook')">Facebook</button>
+	<br />
+	<button onclick="login('google')">Google</button>
+	<form action="submit.php" method="GET">
+		<label>Or fill in</label>
+		<br/>
+		<input type="text" name="email" placeholder="Email" />
+		<br/>
+		<input type="text" name="password" placeholder="Password" />
+		<br/>
+		<input type="submit" value="Login" class="submit" />
+	</form>
+		</div>
+</body>
+</html>
